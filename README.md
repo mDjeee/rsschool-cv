@@ -1,1 +1,1 @@
-# rsschool-cv
+https://mdjeee.github.io/rsschool-cv/cv
