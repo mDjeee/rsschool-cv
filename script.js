@@ -9,11 +9,12 @@ let btnContacts = document.getElementById("contacts");
 
 let audio = new Audio("icon2.mp3");
 
-audio.oncanplaythrough = function(){
-audio.play();
-}
+// audio.oncanplaythrough = function(){
+// audio.play();
+// }
 
 window.onload = function() {
+    audio.play();
     cube.style.transform = `rotateY(${-360}deg) rotateX(${360}deg) scale(${1.5})`;
     
     setTimeout(() => {

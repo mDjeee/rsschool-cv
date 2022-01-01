@@ -58,6 +58,27 @@
       padding-right: 300px;
   }
 
+  .yeap {
+      position: absolute;
+      right: 40px;
+      width: 120px;
+      height: 30px;
+      padding: 4px;
+      border: 2px solid #ffffff;
+  }
+
+  .yeap a:hover {
+      color: #000000;
+  }
+  .yeap:hover {
+      color: #000000;
+      background-color: #ffffff;
+  }
+
+  .about a{
+      text-decoration: none;
+  }
+
   .home {
       background-color: #000000;
       position: relative;
