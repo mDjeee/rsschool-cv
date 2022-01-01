@@ -138,11 +138,47 @@
     .education h3{
         margin-top: 20px;
     }
-
+    .education pre{
+        margin-top: 20px;
+        padding: 5px;
+        font-family: serif;
+        font-size: 14px;
+        width: 200px;
+        margin-left: 40px;
+        background-color: #8a8888;
+        color: #000000;
+    }
   .projects {
       background-color: #000000;
       padding: 40px;
   }
+  .card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px;
+      padding-right: 120px;
+  }
+  .card a{
+      text-decoration: none;
+  }
+
+  .card figure {
+      padding: 10px;
+      border: 1px solid #ffffff;
+      height: 160px;
+      filter: grayscale(100%);
+      transition: 0.5s;
+  }
+  .card figure:hover {
+    filter: grayscale(0);
+    border-radius: 20px;
+    transform: scale(1.1);
+  }
+  .card img {
+      height: 120px;
+  }
+
   .skills {
       background-color: #000000;
       display: flex;
@@ -313,8 +349,16 @@
     color: #ffffff;
     border: 3px solid #ffffff;
     padding: 8px 40px;
-    border-radius: 30px;
     margin-bottom: 40px;
     font-size: 20px;
     cursor: pointer;
   }
+
+  .btns button:active {
+      background-color: #ffffff;
+      color: #000000;
+  }
+  .btns button:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
