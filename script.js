@@ -18,10 +18,28 @@ window.onload = function() {
     
     setTimeout(() => {
         cube.style.transform = `rotateY(${90}deg) rotateX(${-360}deg) scale(${1})`;
+        document.querySelector(".home").style.background = `transparent`;
+        document.querySelector(".experience").style.background = `transparent`;
+        document.querySelector(".education").style.background = `transparent`;
+        document.querySelector(".skills").style.background = `transparent`;
+        document.querySelector(".projects").style.background = `transparent`;
+        document.querySelector(".contacts").style.background = `transparent`;
         setTimeout(() => {
             cube.style.transform = `rotateX(${90}deg)`;
+            document.querySelector(".home").style.background = `transparent`;
+            document.querySelector(".experience").style.background = `transparent`;
+            document.querySelector(".education").style.background = `transparent`;
+            document.querySelector(".skills").style.background = `transparent`;
+            document.querySelector(".projects").style.background = `transparent`;
+            document.querySelector(".contacts").style.background = `transparent`;
             setTimeout(() => {
                 cube.style.transform = `rotateX(${270}deg) rotateZ(${360}deg)`;
+                document.querySelector(".home").style.background = `transparent`;
+                document.querySelector(".experience").style.background = `transparent`;
+                document.querySelector(".education").style.background = `transparent`;
+                document.querySelector(".skills").style.background = `transparent`;
+                document.querySelector(".projects").style.background = `transparent`;
+                document.querySelector(".contacts").style.background = `transparent`;
                 setTimeout(() => {
                     cube.style.transform = `rotateX(${0}deg) rotateY(${180}deg) scale(${1.8})`;
                     setTimeout(() => {
@@ -35,9 +53,15 @@ window.onload = function() {
         }, 1000);
     }, 1000);
 
-    setTimeout(() => {cube.style.transform = `rotateX(${360}deg) rotateY(${360}deg) scale(${1})`}, 7300);
+    setTimeout(() => {cube.style.transform = `rotateX(${360}deg) rotateY(${360}deg) scale(${1})`;
+    document.querySelector(".home").style.background = `#000000`;
+    document.querySelector(".experience").style.background = `#000000`;
+    document.querySelector(".education").style.background = `#000000`;
+    document.querySelector(".skills").style.background = `#000000`;
+    document.querySelector(".projects").style.background = `#000000`;
+    document.querySelector(".contacts").style.background = `#000000`;
+}, 7300);
 
-    setTimeout(() => {cube.style.transition = `${2}s`}, 9000);
 }
 
 
