@@ -61,16 +61,18 @@
   .yeap {
       position: absolute;
       right: 40px;
-      width: 120px;
-      height: 30px;
-      padding: 4px;
-      border: 2px solid #ffffff;
   }
 
-  .yeap a:hover {
-      color: #000000;
+  .yeap button{
+      border: 1px solid #ffffff;
+      background: transparent;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 500;
   }
-  .yeap:hover {
+
+  .yeap button:hover {
       color: #000000;
       background-color: #ffffff;
   }
@@ -151,7 +153,7 @@
     background-color: #000000;
     }
     .education h2{
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .education h3, .education p {
         margin-left: 40px;
@@ -160,11 +162,11 @@
         margin-top: 20px;
     }
     .education pre{
-        margin-top: 20px;
+        margin-top: 5px;
         padding: 5px;
         font-family: serif;
         font-size: 14px;
-        width: 200px;
+        width: 500px;
         margin-left: 40px;
         background-color: #8a8888;
         color: #000000;
@@ -205,6 +207,9 @@
       display: flex;
       flex-direction: row;
       padding-top: 60px;
+  }
+  .skills ul {
+      list-style-type: none;
   }
   .left-skills {
       width: 300px;
@@ -321,12 +326,13 @@
   .social a {
       text-decoration: none;
       font-size: 32px;
-      transition: right 2s;
+      transition: 1s;
   }
   
   .social a:hover {
+    position: relative;
     right: -20px;
-      position: relative;
+    transition: 2s;
   }
 
   .social img {
@@ -337,6 +343,26 @@
   .front {
     transform: translateZ(300px);
   }
+
+  .onload{
+      transform: translateZ(400px);
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .onload button {
+      border: 1px solid #ffffff;
+      background: transparent;
+      padding: 10px 20px;
+      cursor: pointer;
+  }
+
+  .onload button:hover {
+      background-color: #ffffff;
+      color: #000000;
+  }
+
   .right {
     transform: rotateY(-270deg) translateX(300px);
     transform-origin: 100% 0;
@@ -359,20 +385,33 @@
   .btns {
     position: absolute;
     top: 0;
-    right: -600px;
+    right: -1600px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 1s;
+  }
+  .btns ul {
+      list-style-type: none;
+  }
+  .btns li {
+      width: 200px;
   }
   .btns button {
     background-color: transparent;
     color: #ffffff;
+    width: 200px;
     border: 3px solid #ffffff;
     padding: 8px 40px;
     margin-bottom: 40px;
     font-size: 20px;
     cursor: pointer;
+  }
+
+  .btns button:hover {
+    background-color: #ffffff;
+    color: #000000;
   }
 
   .btns button:active {
