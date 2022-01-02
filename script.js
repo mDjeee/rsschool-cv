@@ -21,10 +21,12 @@ let btnHello = document.getElementById("hello")
 
 btnClick.addEventListener("click", () => {
 
-    document.querySelector(".btns").style.right = `${-1600}px`;
-
+    document.querySelector(".btns").style.right = `${-400}px`;
+    document.querySelector(".btns").style.transform = `scale(${0.001})`;
+    
     setTimeout(() => {
         document.querySelector(".btns").style.right = `${-600}px`;
+        document.querySelector(".btns").style.transform = `scale(${1})`;
     }, 8000);
     audio.play();
 
@@ -86,6 +88,7 @@ btnHello.addEventListener("click", () => {
 
     setTimeout(() => {
         document.querySelector(".btns").style.right = `${-600}px`;
+        document.querySelector(".btns").style.transform = `scale(${1})`;
     }, 8000);
 
     cube.style.transform = `rotateY(${-360}deg) rotateX(${360}deg) scale(${1.5})`;
